@@ -11,12 +11,12 @@ $(document).ready(function () {
         localStorage.setItem(time, text);
     })
 
-    function time() {
+    function clock() {
         // get current hour
-        var now = moment().hour();
+        var now = moment().hours();
 
         $('.time-block').each(function () {
-            var schedule = parseInt('id').split('hour')[1];
+            var schedule = parseInt($(this).attr('id').split('hr')[1]);
 
             // cycle color coordinators
             if (schedule < now) {
@@ -36,4 +36,17 @@ $(document).ready(function () {
             }
         })
     }
+
+    // get from local storage
+    $('#hr9 .description').val(localStorage.getItem('hr9'));
+    $('#hr10 .description').val(localStorage.getItem('hr10'));
+    $('#hr11 .description').val(localStorage.getItem('hr11'));
+    $('#hr10 .description').val(localStorage.getItem('hr10'));
+    $('#hr11 .description').val(localStorage.getItem('hr11'));
+    $('#hr12 .description').val(localStorage.getItem('hr12'));
+    $('#hr14 .description').val(localStorage.getItem('hr13'));
+    $('#hr15 .description').val(localStorage.getItem('hr15'));
+    $('#hr16 .description').val(localStorage.getItem('hr16'));
+
+    clock();
 })
