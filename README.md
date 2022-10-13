@@ -8,4 +8,6 @@ Click the save button on the right side to store that event on the schedule in c
 
 If the time of day is before a scheduled event that hour will display green, if the time is current it will display red and if it is after then the event will display gray
 
-<img src="./assets/images/scheduler.png" alt="Screen shot of Work Day Scheduler"/>
+<img src="./assets/img/scheduler.png" alt="Screen shot of Work Day Scheduler"/>
+
+<a href="https://morettilouie.github.io/Scheduler/">Live URL from github</a>
